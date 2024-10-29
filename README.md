@@ -24,7 +24,8 @@ Bu proje, çeşitli şifreleme yöntemlerini içerir ve kullanıcıların farkl�
 - Alfabedeki harflerin belirli bir sabit sayı kadar kaydırılması ile yapılan en temel şifreleme algoritmalarından biridir.
 - Örneğin, 3 karakter kaydırma ile `A` harfi `D` olur, `B` harfi `E` olur.
 
-![Caesar Şifreleme Örneği](assets/app_image.png)
+![Şifreleme Algıritmaları](assets/app_image.png)
+)
 
 ### 5. **Vigenere Şifreleme**
 
@@ -54,7 +55,10 @@ Bu proje, çeşitli şifreleme yöntemlerini içerir ve kullanıcıların farkl�
 
 Projeyi yerel olarak çalıştırmak için:
 
-1. Bu projeyi klonlayın:
+1. Bu projeyi klonlayın, proje dizinine gidin, gerekli bağımlılıkları yükleyin ve uygulamayı başlatın:
    ```bash
    git clone https://github.com/kullanici/sifreleme-algoritmalari.git
+   cd sifreleme-algoritmalari
+   npm install
+   npm start
    ```
