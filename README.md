@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Şifreleme Algoritmaları Projesi
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bu proje, çeşitli şifreleme yöntemlerini içerir ve kullanıcıların farklı algoritmalarla metin şifrelemelerini ve şifre çözmelerini sağlar. Proje, kriptografi alanına ilgi duyanlar için temel şifreleme tekniklerini öğrenme ve uygulama fırsatı sunar.
 
-## Available Scripts
+## Desteklenen Şifreleme Algoritmaları
 
-In the project directory, you can run:
+### 1. **Doğrusal Şifreleme**
 
-### `npm start`
+- Doğrusal şifreleme, harfleri belirli bir doğrusal matematiksel formül ile dönüştürerek şifreler.
+- Örneğin: Her harf, belirli bir formüle göre alfabede yeni bir harf ile değiştirilir.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 2. **Kaydırmalı (Shift) Şifreleme**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Harflerin alfabede sabit bir sayı kadar kaydırılmasıyla yapılan basit bir şifreleme türüdür.
+- Caesar şifresi gibi yöntemlerle benzerlik taşır.
 
-### `npm test`
+### 3. **Rota (Rotasyonel) Şifreleme**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Belirli bir rotasyon mantığıyla harflerin yer değiştirmesini sağlar.
+- Genellikle her karakteri belli bir rotasyon (örn. 13 karakter) ile yer değiştirir. En bilinen örneği **ROT13** algoritmasıdır.
 
-### `npm run build`
+### 4. **Caesar Şifreleme**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Alfabedeki harflerin belirli bir sabit sayı kadar kaydırılması ile yapılan en temel şifreleme algoritmalarından biridir.
+- Örneğin, 3 karakter kaydırma ile `A` harfi `D` olur, `B` harfi `E` olur.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Caesar Şifreleme Örneği](assets/app_image.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 5. **Vigenere Şifreleme**
 
-### `npm run eject`
+- Caesar şifresinin daha gelişmiş bir versiyonudur ve bir anahtar kelimeye göre her harf farklı bir miktarda kaydırılır.
+- Şifreleme, anahtar kelimenin her harfine göre yapılan kaydırmalar ile gerçekleştirilir.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 6. **Yer Değiştirme Şifreleme**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Metin içindeki harflerin belirli bir desen veya kurala göre yerlerinin değiştirilmesiyle yapılır.
+- Harflerin sırasını değiştirerek yeni bir şifreli metin oluşturur.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 7. **Yerine Koyma (Substitution) Şifreleme**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Her harfi belirli bir başka harf ile değiştirme yöntemi ile yapılan şifreleme türüdür.
+- Örneğin, `A` harfi her zaman `Z`, `B` harfi `Y` gibi farklı bir harf ile değiştirilir.
 
-## Learn More
+### 8. **Permütasyon Şifreleme**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Metin karakterlerinin yer değiştirme işlemleri ile yapılır. Her karakter belirli bir permütasyon düzenine göre yeniden sıralanır.
+- Genellikle sıralama, karmaşık bir desen ya da şifreleme anahtarına göre yapılır.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Kullanılan Teknolojiler
 
-### Code Splitting
+- **REACT**: Algoritmaların çalışması için, Basit kullanıcı arayüzü sağlamak için.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Kurulum
 
-### Analyzing the Bundle Size
+Projeyi yerel olarak çalıştırmak için:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Bu projeyi klonlayın:
+   ```bash
+   git clone https://github.com/kullanici/sifreleme-algoritmalari.git
+   ```
